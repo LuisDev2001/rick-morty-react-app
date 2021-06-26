@@ -54,12 +54,14 @@ class App extends React.Component {
         <ListCharacter list={this.state.data} />
 
         {!this.state.loading && (
-          <button
-            onClick={this.fetchCharacters}
-            className="btn btn-primary get__more"
-          >
-            Get More Character
-          </button>
+          <div className="button__container">
+            <button
+              onClick={this.fetchCharacters}
+              className="btn btn-primary get__more"
+            >
+              Get More Character
+            </button>
+          </div>
         )}
       </div>
     );

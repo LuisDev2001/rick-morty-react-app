@@ -3,18 +3,25 @@
   min-height: 100vh;
 }
 .btn.btn-primary.get__more {
-  margin: 15px;
   background: #13b328;
   border: 2.5px solid #13b328;
-  width: calc(100% - 30px);
+  width: 100%;
   height: 45px;
   color: #ffffff;
   font-size: 19px;
   transition: 0.3s ease all;
   letter-spacing: 1px;
+  display: block;
 }
 
 .btn.btn-primary.get__more:hover {
   background: #ffffff;
   color: #13b328;
+}
+
+.button__container {
+  padding: 15px;
+  margin: 0 auto;
+  max-width: 1200px;
+  width: 100%;
 }

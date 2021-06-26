@@ -1,0 +1,21 @@
+.loader {
+  width: 100%;
+  max-width: 1200px;
+  padding: 0 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.loader img {
+  width: 100px;
+  display: inline-block;
+}
+
+.loader span {
+  color: #ffffff;
+  font-size: 18px;
+  font-family: "Helvetica";
+  letter-spacing: 2px;
+}

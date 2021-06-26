@@ -2,3 +2,9 @@
   text-align: center;
   padding: 20px 0;
 }
+
+.header img {
+  width: 100%;
+  max-width: 450px;
+  height: 185px;
+}

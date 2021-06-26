@@ -14,6 +14,7 @@ class App extends React.Component {
     super(props);
 
     this.state = {
+      nextPage: 1,
       loading: true,
       data: [],
     };
@@ -25,14 +26,18 @@ class App extends React.Component {
 
   fetchCharacters = async () => {
     try {
-      const response = await fetch(`https://rickandmortyapi.com/api/character`);
+      const response = await fetch(
+        `https://rickandmortyapi.com/api/character?page=${this.state.nextPage}`
+      );
       const { results } = await response.json();
       this.setState({
+        nextPage: this.state.nextPage + 1,
         loading: false,
-        data: results,
+        data: [].concat(this.state.data, results),
       });
     } catch (error) {
       this.setState({
+        nextPage: 1,
         loading: true,
         data: [],
       });

@@ -1,1 +1,4 @@
-
+.App {
+  background: rgb(22, 24, 38);
+  min-height: 100vh;
+}
